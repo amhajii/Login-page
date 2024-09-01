@@ -1,0 +1,10 @@
+@mixin centralize ($dir:row , $justify:center){
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+    justify-content: $justify;
+}
+
+
+
+

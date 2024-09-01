@@ -1,6 +1,12 @@
+@import "_source/color";
+@import "_source/mixins";
+
 *{
     margin: 0;
 }
 body{
-    background-color: red;
+    background-color: $color-main;
 }
+
+
+
