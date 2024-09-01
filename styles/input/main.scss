@@ -27,34 +27,38 @@ body {
     background-color: transparent;
     position: relative;
     #circle {
-      width: 60px;
-      height: 60px;
-      background-color: #fff;
+      width: 70px;
+      height: 70px;
+      background-color: #ffffff;
       position: absolute;
-      top: -35px;
+      top: -30px;
       z-index: -1000;
-      border-radius: 50px 50px 20px 50px;
-      transform: rotate(45deg);
+      border-radius: 50px;
+      // border-radius: 50px 50px 25px 50px;
+      transform: rotate(-135deg);
+      
     }
+    // box-shadow: 0 0 20px red;
     .bx {
+      box-shadow: 0 20px 0 red;
       width: 100%;
       height: 100%;
-      background-color: hsla(0, 0%, 100%, 0.1);
-      backdrop-filter: blur(5px);
+      background-color: hsla(0, 0%, 0%, 0.1);
+      backdrop-filter: blur(10px);
       border-radius: 30px;
       @include centralize(column);
       --r: 50px; /* cut size */
       mask: radial-gradient(var(--r) at top, #0000 calc(100% - 1px), #000);
-
+      // filter: drop-shadow(0 10px 0px red);
       input {
         width: 40%;
         height: 30px;
         margin: 10px;
-        background-color: aqua;
+        background-color: #fff;
         border-radius: 5px;
         outline: none;
         padding: 0 2%;
-
+        
         &[type="password"] {
           letter-spacing: 5px;
         }
@@ -62,10 +66,17 @@ body {
       button {
         width: 40%;
         height: 40px;
-        background-color: red;
+        background-color: #c4272f;
         cursor: pointer;
         margin: 10px;
         border-radius: 50px;
+        color: #fff;
+        font-size: 20px;
+        transition: .2s;
+        box-shadow: 0 15px 30px hsla(0, 100%, 50%, 0.2);
+        &:hover{
+          background-color: #ea0b16;
+        }
       }
     }
   }
